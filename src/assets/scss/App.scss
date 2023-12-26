@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./font.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+@layer components {
+  .section-title {
+    @apply font-Gilroy-Bold  md:text-[42px] text-[42px] sm:text-[36px] max-[640px]:text-[36px] max-[425px]:text-[28px] max-[425px]:leading-[40px] max-[320px]:text-[24px] max-[320px]:leading-[29px] leading-[49px] text-black capitalize;
+  }
+}
+@layer components {
+  .golden-title {
+    @apply font-Gilroy-Medium text-[18px] leading-[21px]  tracking-[0.175em] uppercase text-golden mb-[20px];
+  }
+}
+@layer components {
+  .more-info {
+    @apply font-Gilroy-Medium mt-[14px] text-[14px] leading-[185%] text-golden no-underline;
+  }
+}
+@layer components {
+  .detail-text {
+    @apply font-Gilroy-Regular lg:max-w-[556px] text-[18px]  leading-[185%] text-lite-black opacity-[.8] max-[425px]:text-[16px] max-[320px]:text-[14px];
+  }
+}
+@layer components {
+  .footer-text {
+    @apply mb-[16px] block no-underline font-Gilroy-Medium text-[15px] leading-[160%] text-lite-black opacity-[.8];
+  }
+}
+
+@layer components {
+  .footer-title {
+    @apply font-DMSans-Regular mb-[20px] font-[400] text-[17px] leading-[22px] tracking-[-0.231818px] text-golden;
+  }
+}

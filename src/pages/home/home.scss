@@ -1,0 +1,43 @@
+@import "../../assets/scss/App.scss";
+
+.bestproduct {
+  @apply mx-auto max-[1024px]:w-fit #{!important};
+
+  .slick-list {
+    @apply max-[1024px]:max-w-[588px] max-[768px]:max-w-[315px] mx-auto;
+  }
+
+  .slick-track {
+    @apply flex mt-[130px];
+  }
+  .slick-slide {
+    @apply flex justify-center gap-x-[42px] #{!important};
+  }
+
+  .slick-prev {
+    @apply bg-[url("../../assets/image/bestproducts/prevaro.svg")] bg-center bg-[white] w-[50px] h-[50px] z-[1] bg-no-repeat shadow-[0px_7.03125px_19.5312px_rgba(0,0,0,0.06)] rounded-[26.087px] left-0 before:content-none focus:bg-no-repeat focus:bg-center hover:bg-no-repeat hover:bg-center;
+  }
+
+  .slick-next {
+    @apply bg-[url("../../assets/image/bestproducts/nextaro.svg")] bg-no-repeat bg-center bg-[white] shadow-[0px_7.03125px_19.5312px_rgba(0,0,0,0.06)] w-[50px] h-[50px] z-[1] rounded-[50%] right-0 before:content-none focus:bg-no-repeat focus:bg-center hover:bg-no-repeat hover:bg-center;
+  }
+}
+
+
+.testimonials {
+  @apply max-[1300px]:w-fit mx-auto #{!important};
+  .slick-list {
+    @apply max-[1300px]:max-w-[850px] max-[992px]:max-w-[400px] max-[400px]:max-w-[310px];
+  }
+  .slick-slide {
+    @apply flex justify-center gap-x-[42px] #{!important};
+  }
+
+  .slick-prev {
+    @apply bg-[url("/src/assets/image/bestproducts/prevaro.svg")] bg-center w-[50px] h-[50px] z-[1] bg-no-repeat shadow-[0px_7.03125px_19.5312px_rgba(0,0,0,0.06)]  bg-white rounded-[26.087px] left-0 top-[34%] before:content-none focus:bg-no-repeat focus:bg-center hover:bg-no-repeat hover:bg-center;
+  }
+
+  .slick-next {
+    @apply bg-[url("/src/assets/image/bestproducts/nextaro.svg")] bg-no-repeat bg-center shadow-[0px_7.03125px_19.5312px_rgba(0,0,0,0.06)] w-[50px] h-[50px] z-[1] bg-white rounded-[50%] right-0 top-[34%] before:content-none focus:bg-no-repeat focus:bg-center hover:bg-no-repeat hover:bg-center;
+  }
+}
