@@ -1,7 +1,7 @@
 import React from "react";
 
 import Hero from "../../components/home/hero/Hero";
-import "./home.scss";
+import "./home.css";
 import ChoosingUs from "../../components/home/choosingus/ChoosingUs";
 import BestProduct from "../../components/home/bestproduct/BestProduct";
 import Experience from "../../components/home/experiences/Experience";

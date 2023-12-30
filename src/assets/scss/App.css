@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./font.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+@layer components {
+  .section-title {
+    @apply font-Gilroy-Bold  md:text-[42px] text-[42px] sm:text-[36px] max-[640px]:text-[36px] max-[425px]:text-[28px] max-[425px]:leading-[40px] max-[320px]:text-[24px] max-[320px]:leading-[29px] leading-[49px] text-black capitalize;
+  }
+}
+@layer components {
+  .golden-title {
+    @apply font-Gilroy-Medium text-[18px] leading-[21px]  tracking-[0.175em] uppercase text-golden mb-[20px];
+  }
+}
+@layer components {
+  .more-info {
+    @apply font-Gilroy-Medium mt-[14px] text-[14px] leading-[185%] text-golden no-underline;
+  }
+}
+@layer components {
+  .detail-text {
+    @apply font-Gilroy-Regular lg:max-w-[556px] text-[18px]  leading-[185%] text-lite-black opacity-[.8] max-[425px]:text-[16px] max-[320px]:text-[14px];
+  }
+}
+@layer components {
+  .footer-text {
+    @apply mb-[16px] block no-underline font-Gilroy-Medium text-[15px] leading-[160%] text-lite-black opacity-[.8];
+  }
+}
+
+@layer components {
+  .footer-title {
+    @apply font-DMSans-Regular mb-[20px] font-[400] text-[17px] leading-[22px] tracking-[-0.231818px] text-golden;
+  }
+}
+
+
+/* home */
+@layer components {
+.bestproduct {
+  @apply mx-auto max-[1024px]:w-fit !important;
+}
+.bestproduct .slick-list {
+    @apply max-[1024px]:max-w-[588px] max-[768px]:max-w-[315px] mx-auto;
+  }
+
+  .bestproduct .slick-track {
+    @apply flex mt-[130px];
+  }
+  .bestproduct .slick-slide {
+    @apply flex justify-center gap-x-[42px] !important;
+  }
+
+  .bestproduct .slick-prev {
+    @apply bg-[url("../../assets/image/bestproducts/prevaro.svg")] bg-center bg-[white] w-[50px] h-[50px] z-[1] bg-no-repeat shadow-[0px_7.03125px_19.5312px_rgba(0,0,0,0.06)] rounded-[26.087px] left-0 before:content-none focus:bg-no-repeat focus:bg-center hover:bg-no-repeat hover:bg-center;
+  }
+
+  .bestproduct .slick-next {
+    @apply bg-[url("../../assets/image/bestproducts/nextaro.svg")] bg-no-repeat bg-center bg-[white] shadow-[0px_7.03125px_19.5312px_rgba(0,0,0,0.06)] w-[50px] h-[50px] z-[1] rounded-[50%] right-0 before:content-none focus:bg-no-repeat focus:bg-center hover:bg-no-repeat hover:bg-center;
+  }
+
+
+
+.testimonials {
+  @apply max-[1300px]:w-fit mx-auto !important;
+}
+.testimonials .slick-list {
+    @apply max-[1300px]:max-w-[850px] max-[992px]:max-w-[400px] max-[400px]:max-w-[310px];
+  }
+  .testimonials .slick-slide {
+    @apply flex justify-center gap-x-[42px] !important;
+  }
+
+  .testimonials .slick-prev {
+    @apply bg-[url("/src/assets/image/bestproducts/prevaro.svg")] bg-center w-[50px] h-[50px] z-[1] bg-no-repeat shadow-[0px_7.03125px_19.5312px_rgba(0,0,0,0.06)]  bg-white rounded-[26.087px] left-0 top-[34%] before:content-none focus:bg-no-repeat focus:bg-center hover:bg-no-repeat hover:bg-center;
+  }
+
+  .testimonials .slick-next {
+    @apply bg-[url("/src/assets/image/bestproducts/nextaro.svg")] bg-no-repeat bg-center shadow-[0px_7.03125px_19.5312px_rgba(0,0,0,0.06)] w-[50px] h-[50px] z-[1] bg-white rounded-[50%] right-0 top-[34%] before:content-none focus:bg-no-repeat focus:bg-center hover:bg-no-repeat hover:bg-center;
+  }
+
+}

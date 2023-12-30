@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../../assets/scss/App.scss";
+import "../../assets/scss/App.css";
 import bag from "../../assets/image/header/bag.svg";
 
 function Header() {
